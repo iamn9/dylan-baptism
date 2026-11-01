@@ -149,14 +149,37 @@ h1 { margin: 6px 0 0; font-weight: 500; line-height: 1; }
 .reply strong { color: var(--royal); font-weight: 700; }
 
 @media (max-width: 760px) {
-  .scene { padding-top: 40px; }
-  .d1 { left: 2%; top: 4%; } .d2 { left: auto; right: 2%; top: 10%; }
-  .dove svg { width: 56px; height: auto; }
-  .hab { top: 1%; } .hab svg { width: 86px; height: auto; }
+  /* a band of open sky above the card, and side gutters for the balloons */
+  .scene { align-items: start; padding: 170px 30px 120px; }
+  .card { width: 100%; border-radius: 180px 180px 16px 16px; padding: 10px; }
+  .frame { padding: 18px 14px 26px; border-radius: 170px 170px 9px 9px; }
+
+  .hab { top: 20px; } .hab svg { width: 92px; height: auto; }
+  .d1 { left: 5%; top: 70px; } .d2 { left: auto; right: 7%; top: 112px; }
+  .dove svg { width: 52px; height: auto; }
+  .c1 { top: 2%; } .c2 { top: 9%; }
+
+  .balloon svg { width: 30px; height: auto; }
+  .bl1 { left: -4px; } .bl2 { left: 8px; } .bl5 { right: 6px; } .bl6 { right: -6px; }
   .bl3, .bl4 { display: none; }
-  .frame { padding: 20px 16px 28px; }
-  .card { border-radius: 200px 200px 18px 18px; }
-  .frame { border-radius: 190px 190px 10px 10px; }
+  .sp1 { top: 128px; left: 30%; } .sp4 { top: 36px; right: 34%; }
+  .sp2 { top: 46%; right: 3px; } .sp3 { top: 74%; left: 3px; }
+
+  .arch { width: 76%; }
+  .flowers { width: 118px; bottom: -18px; }
+  .fl-l { left: -22px; } .fl-r { right: -22px; }
+  .lead-in { font-size: 0.98rem; margin-top: 18px; }
+  .title { font-size: 1.2rem; }
+  .name-art { padding-top: 34px; }
+  .crown { width: 62px; height: auto; margin-left: -31px; }
+  .when { gap: 8px; }
+  .when-side, .month, .year { font-size: 0.85rem; letter-spacing: 0.06em; }
+  .day { font-size: 2.75rem; }
+  .where { font-size: 1.1rem; }
+  .reply { font-size: 1.02rem; }
+}
+@media (max-width: 370px) {
+  .scene { padding-left: 22px; padding-right: 22px; }
 }
 
 /* ---------- Music ---------- */
